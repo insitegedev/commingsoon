@@ -64,6 +64,7 @@
 
   const countDownDate = function() {
     let timeleft = new Date(countdown.getAttribute('data-count')).getTime() - new Date().getTime();
+    // let timeleft = 9999999;
 
     let days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
     let hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
